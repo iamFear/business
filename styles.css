@@ -1,0 +1,60 @@
+/* 
+Desing Pattern:
+
+*/
+:root {
+  --title-text-color: #171717;
+  --subtitle-text-color: #525252;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+main {
+  width: 75vw;
+  height: 100vh;
+  margin: 0 10vw;
+  gap: 5vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 5.2rem;
+  color: var(--title-text-color);
+}
+
+.main-section {
+  width: 50%;
+}
+
+.main-img {
+  height: 100%;
+  width: 100%;
+}
+
+.main-section--left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  letter-spacing: 0.6px;
+  color: var(--subtitle-text-color);
+}
