@@ -2,29 +2,59 @@
 Desing Pattern:
 
 */
+
+/* Custom Properties */
 :root {
   --title-text-color: #171717;
   --subtitle-text-color: #525252;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-  font-family: "Bricolage Grotesque", sans-serif;
-}
-
 body {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  width: 100vw;
+  padding: 0 12.5vw;
+  height: 10vh;
+  background-color: #525252;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.logo {
+  width: 50%;
+}
+
+ul {
+  width: 50%;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-link {
+  display: inline-block;
+
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
 }
 
 main {
   width: 75vw;
-  height: 100vh;
+  height: 90vh;
   margin: 0 10vw;
   gap: 5vw;
 
@@ -50,11 +80,29 @@ h1 {
 .main-section--left {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 2.2rem;
 }
 
 h3 {
   font-size: 1.6rem;
   letter-spacing: 0.6px;
   color: var(--subtitle-text-color);
+}
+
+.main-btn {
+  width: 18.5rem;
+  height: 4.8rem;
+
+  background-color: var(--title-text-color);
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 2.4rem;
+  padding: 1.4rem;
+  letter-spacing: 1px;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
